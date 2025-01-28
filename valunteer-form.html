@@ -1,0 +1,198 @@
+<div class="modal-header">
+    <h4 class="modal-title">
+        <i class="fa fa-pencil-square-o"></i> Volunteer Registration
+    </h4>  
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+</div>
+<div class="modal-body" style="overflow: auto; max-height: 400px;">
+    <div class="col-md-12">            
+        <div class="alert alert-danger error_block" style="display: none"></div>
+        <div class="alert alert-success success_block" style="display: none"></div>
+    </div>
+    <form action="https://www.846s.org/valunteer-form.html#" id="main_form" class="form-horizontal" novalidate="novalidate">    
+        <div class=""><p class="text-justify">As a volunteer, you are critical for our success in helping individuals and community members become more knowledgeable of mental health trauma and breakdown historical barriers that prevent them from accessing mental health care (cultural stigma, lack of trust, insurance, etc.)</p></div>
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Email address 
+            </label>
+            <div class="controls col-sm-8">
+                <input type="email" placeholder="Email Address" id="email" name="email" class="form-control" required="">
+            </div>
+        </div>
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Name
+            </label>
+            <div class="controls col-sm-4">
+                <input type="text" placeholder="First Name" id="first_name" name="first_name" class="form-control" required="" />
+            </div>
+            <div class="controls col-sm-4">
+                <input type="text" placeholder="Last Name" id="last_name" name="last_name" class="form-control" required="" />
+            </div>
+        </div>
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Gender 
+            </label>
+            <div class="controls col-sm-2">
+                <div class='radio radio-primary'>
+                    <input type='radio' name='gender' id='genderMale' class='gender' required="" value='Male'>
+                    <label for='genderMale'>Male</label>
+                </div>
+            </div>
+            <div class="controls col-sm-2">
+                <div class = 'radio radio-primary'>
+                    <input type='radio' name='gender' id='genderFemale' class='gender' required="" value='Female'>
+                    <label for='genderFemale'>Female</label>
+                </div> 
+            </div>
+            <label id="gender-error" class="help-block help-block-error" for="gender"></label>
+        </div>
+
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Street Address
+            </label>
+            <div class="controls col-sm-8">
+                <textarea placeholder="Street Address" id="address" name="address" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                ZIP Code
+            </label>
+            <div class="controls col-sm-3">
+                <select name="zip" id="zip" class="form-control select2" required="" tabindex="-1" aria-hidden="true">
+                    <option value="">-- Select --</option>
+                </select>
+                <label id="zip-error" class="help-block help-block-error" for="zip"></label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" placeholder="City" id="city" class="form-control" readonly="">
+            </div>
+            <div class="col-sm-2">
+                <input type="text" placeholder="State" id="state" class="form-control" readonly="">
+            </div>
+        </div> 
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Phone number
+            </label>
+            <div class="controls col-sm-5">
+                <input type="text" placeholder="Phone number" id="phone" name="phone" class="form-control numberonly" minlength="10" maxlength="10" required="">
+            </div>
+        </div> 
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">Current Volunteer Opportunities </label>
+            <div class="controls col-sm-8">
+                <div class="colum-row row">
+                    <div class="col-sm-7">
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities1' value='1' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities1'>Constructive Conversation with HER</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities2' value='2' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities2'>Constructive Conversation with Him</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities3' value='3' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities3'>Youth Festival of Ideas Summit</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities4' value='4' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities4'>Healing Through Art</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities5' value='5' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities5'>Breaking down Black Mental Health</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities6' value='6' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities6'>Mental health promotion</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities10' value='10' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities10'>General Organizational Support</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities7' value='7' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities7'>Mental Health 101</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities8' value='8' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities8'>Mental Health First Aids</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities9' value='9' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities9'>Research & Publication</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities11' value='11' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities11'>Grant writing</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities12' value='12' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities12'>Fundraising</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities13' value='13' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities13'>Mentoring</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='opportunities14' value='14' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='opportunities14'>Other</label>
+                        </div>
+                    </div><label id="opportunities[]-error" class="help-block help-block-error" for="opportunities[]"></label>
+                </div>
+            </div>
+        </div>  
+        <div class="form-group colum-row row other_ct" style="display:none">
+            <label class="control-label col-sm-2 offset-sm-1"> &nbsp;
+            </label>
+            <div class="controls col-sm-8">
+                <input type="text" placeholder="Other" id="other" name="other" class="form-control">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-light btn_close"><i class="fa fa-close"></i> Close</button>
+    <button type="button" class="btn btn-success action_modal_save" data-close="true" data-url="valunteer-form-save.html"><i class="fa fa-save"></i> Save 
+    </button>
+</div>
+<script type="text/javascript">
+    $('.select2').select2({
+        ajax: {
+            url: 'https://www.846s.org/home/get_zip/',
+            dataType: 'json',
+            delay: 250,
+            processResults: function (data) {
+                return {
+                    results: data
+                };
+            }
+        }
+    });
+    $(document).on('change', "#zip", function(){  
+        $.post('home/get_zip_data/index.html', {id:$(this).val()}, function (res) {
+            if (res.status == "1") {
+                $("#city").val(res.city);
+                $("#state").val(res.state);
+            }else{
+                $("#city").val("");
+                $("#state").val("");
+            }
+        }, 'json');
+    });
+     $(document).on('click', "#opportunities14", function(){
+        if($(this).is(":checked")){
+             $(".other_ct").show();
+        }else{
+            $("#other").val("");
+            $(".other_ct").hide();
+        }
+    });
+</script>

@@ -1,0 +1,211 @@
+<div class="modal-header">
+    <h4 class="modal-title">
+        <i class="fa fa-pencil-square-o"></i> 846s Internship Application
+    </h4>  
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+</div>
+<div class="modal-body" style="overflow: auto; max-height: 400px;">
+    <div class="col-md-12">            
+        <div class="alert alert-danger error_block" style="display: none"></div>
+        <div class="alert alert-success success_block" style="display: none"></div>
+    </div>
+    <form action="https://www.846s.org/internship-form.html#" id="main_form" class="form-horizontal" novalidate="novalidate">   
+        <div class="">
+            <p class="text-justify">Dr. Remi Douah will be delighted to work directly with college and graduate-level interns throughout the year in various capacities supporting a wide range of projects and services focusing on behavioral health public administration, as well as social media, social justice, public health, gender and women’s studies, marketing and communications. Please apply below</p>
+        </div>
+        
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Name
+            </label>
+            <div class="controls col-sm-4">
+                <input type="text" placeholder="First Name" id="first_name" name="first_name" class="form-control" required="" />
+            </div>
+            <div class="controls col-sm-4">
+                <input type="text" placeholder="Last Name" id="last_name" name="last_name" class="form-control" required="" />
+            </div>
+        </div>
+        
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Gender 
+            </label>
+            <div class="controls col-sm-2">
+                <div class='radio radio-primary'>
+                    <input type='radio' name='gender' id='genderMale' class='gender' required="" value='Male'>
+                    <label for='genderMale'>Male</label>
+                </div>
+            </div>
+            <div class="controls col-sm-2">
+                <div class = 'radio radio-primary'>
+                    <input type='radio' name='gender' id='genderFemale' class='gender' required="" value='Female'>
+                    <label for='genderFemale'>Female</label>
+                </div> 
+            </div>
+            <label id="gender-error" class="help-block help-block-error" for="gender"></label>
+        </div>
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Email address 
+            </label>
+            <div class="controls col-sm-5">
+                <input type="email" placeholder="Email Address" id="email" name="email" class="form-control" required="">
+            </div>
+        </div>
+
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Phone number
+            </label>
+            <div class="controls col-sm-5">
+                <input type="text" placeholder="Phone number" id="phone" name="phone" class="form-control numberonly" minlength="10" maxlength="10" required="">
+            </div>
+        </div> 
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Street Address
+            </label>
+            <div class="controls col-sm-8">
+                <textarea placeholder="Street Address" id="address" name="address" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                ZIP Code
+            </label>
+            <div class="controls col-sm-3">
+                <select name="zip" id="zip" class="form-control select2" required="" tabindex="-1" aria-hidden="true">
+                    <option value="">-- Select --</option>
+                </select>
+                <label id="zip-error" class="help-block help-block-error" for="zip"></label>
+            </div>
+            <div class="col-sm-3">
+                <input type="text" placeholder="City" id="city" class="form-control" readonly="">
+            </div>
+            <div class="col-sm-2">
+                <input type="text" placeholder="State" id="state" class="form-control" readonly="">
+            </div>
+        </div> 
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Academic Institution
+            </label>
+            <div class="controls col-sm-5">
+                <input type="text" placeholder="Academic Institution" id="institution" name="institution" class="form-control">
+            </div>
+        </div> 
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-2 offset-sm-1">
+                Availability
+            </label>
+            <div class="controls col-sm-5">
+                <div class="input-group">
+                    <input type="text" class="form-control pull-right" id="availability" name="availability">
+                </div>
+            </div>
+        </div>
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-11 offset-sm-1">Current Internship Opportunities </label>
+            <div class="controls col-sm-8 offset-sm-3">
+                <div class="colum-row row">
+                    <div class="col-sm-7">
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='intopportunities1' value='1' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='intopportunities1'>Behavioral Health </label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='intopportunities2' value='2' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='intopportunities2'>Gender and women’s studies</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='intopportunities3' value='3' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='intopportunities3'>Marketing and communications</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='intopportunities4' value='4' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='intopportunities4'>Social Justice</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='intopportunities5' value='5' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='intopportunities5'>Social Media</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='intopportunities6' value='6' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='intopportunities6'>Social Work</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='intopportunities7' value='7' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='intopportunities7'>Youth Development</label>
+                        </div>
+                        <div class='checkbox checkbox-primary'>
+                            <input type='checkbox' name='opportunities[]' id='intopportunities8' value='8' required="" minlength="1" data-msg-required="Select atleast one Current Internship Opportunity"/>
+                            <label for='intopportunities8'>Other</label>
+                        </div>
+                    </div>
+                    <label id="opportunities[]-error" class="help-block help-block-error" for="opportunities[]"></label>
+                </div>
+            </div>
+        </div>  
+        <div class="form-group colum-row row other_ct" style="display:none">
+            <label class="control-label col-sm-2 offset-sm-1">
+                &nbsp;
+            </label>
+            <div class="controls col-sm-8">
+                <input type="text" placeholder="Other" id="other" name="other" class="form-control">
+            </div>
+        </div>
+        <div class="form-group colum-row row">
+            <label class="control-label col-sm-11 offset-sm-1">
+                Why are you interested in 846s.org?
+            </label>
+            <div class="controls col-sm-8 offset-sm-3">
+                <textarea placeholder="Why are you interested in 846s.org?" id="why_interested" name="why_interested" class="form-control"></textarea>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-light btn_close"><i class="fa fa-close"></i> Close</button>
+    <button type="button" class="btn btn-success action_modal_save" data-close="true" data-url="internship-form-save.html"><i class="fa fa-save"></i> Save 
+    </button>
+</div>
+<style></style>
+<script type="text/javascript">
+    $('.select2').select2({
+        ajax: {
+            url: 'https://www.846s.org/home/get_zip/',
+            dataType: 'json',
+            delay: 250,
+            processResults: function (data) {
+                return {
+                    results: data
+                };
+            }
+        }
+    });
+    $(document).on('change', "#zip", function(){  
+        $.post('home/get_zip_data/index.html', {id:$(this).val()}, function (res) {
+            if (res.status == "1") {
+                $("#city").val(res.city);
+                $("#state").val(res.state);
+            }else{
+                $("#city").val("");
+                $("#state").val("");
+            }
+        }, 'json');
+    });
+    
+    $(document).on('click', "#intopportunities8", function(){
+        if($(this).is(":checked")){
+             $(".other_ct").show();
+        }else{
+            $("#other").val("");
+            $(".other_ct").hide();
+        }
+    });
+    $(document).ready(function(e) {
+        $('#availability').daterangepicker();   
+    });
+</script>
