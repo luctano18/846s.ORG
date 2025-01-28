@@ -1,0 +1,79 @@
+<div class="modal-header">
+    <h4 class="modal-title">
+        <i class="fa fa-pencil-square-o"></i> Make Donation
+    </h4>  
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+</div>
+<!--<form action="https://www.846s.org/donate" method="post" id="main_form" class="form-horizontal" novalidate="novalidate">--> 
+<div class="modal-body" style="overflow: auto; max-height: 400px;">
+    <div class="col-md-12">            
+        <div class="alert alert-danger error_block" style="display: none"></div>
+        <div class="alert alert-success success_block" style="display: none"></div>
+    </div>
+    <form action="https://www.846s.org/donate-form/wellness_community_center.html#" id="main_form" class="form-horizontal" novalidate="novalidate"> 
+        <input type="hidden" name="dtype" id="dtype" value="wellness_community_center"/>
+                    
+            <input type="hidden" name="event" id="event" value="Wellness Community Center"/>
+            <h4>Youth Mental Health and Wellness Community Center</h4>
+            <div class="">The Youth Mental Health and Wellness Community Center will be in historically marginalized, disinvested, disenfranchised community and serve as a one-stop-shop for youth-led development on mental health and public safety in the community.</div>
+            <div>Donate Now to help the Youth Mental Health and Wellness Community Center become a reality.</div>
+            <div class="mt-3 mb-3">
+                <strong>Donate Now:</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-group colum-rows">
+                        <label><b>Your Name:</b></label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required/>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group colum-row">                    
+                        <label><b>Your Email:</b></label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group colum-row">
+                <div class="controls">
+                    <p>I wish to contribute USD <input type="text" class="numberonly" name="amount" id="amount" style="width:50px;" /> towards expenses related to the Building a Youth Mental Health and Wellness Community Center in South Minneapolis, Minnesota.</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+                </div>
+            </div>
+            </form>
+</div>
+<div class="modal-footer justify-content-between">
+    <div>846s.org is a public non-profit 501(c)3 organization.</div>
+    <div>
+        <button type="button" data-dismiss="modal" class="btn btn-light btn_close"><i class="fa fa-close"></i> Close</button>
+        <button type="button" class="btn btn-success action_modal_payment" data-msg="Are you proceed to donate?" data-url="../donate.html">
+            Next <i class="fa fa-angle-double-right"></i> 
+        </button>
+    </div>
+</div>
+<script>
+    $(document).on('click', ".amtsrc", function () {
+        $(".amount").text("");
+        $("#amount").val("");
+        if ($(this).is(":checked") && $(this).val() == '1') {
+            $(".inpsessions").prop("disabled", false);
+            $(".inpamount").prop("disabled", true);
+        } else {
+            $(".inpamount").prop("disabled", false);
+            $(".inpsessions").val("").prop("disabled", true);
+        }
+    });
+
+    $(document).on('keyup', ".inpsessions", function () {
+        $this = $(this).val();
+        if ($this != "") {
+            var sval = "100";
+            $(".amount").text(sval * $this);
+            $("#amount").val(sval * $this);
+
+        }
+    });
+    $(document).on('keyup', ".inpamount", function () {
+        $("#amount").val($(this).val());
+    });
+</script>
+
